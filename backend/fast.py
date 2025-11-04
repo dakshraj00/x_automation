@@ -1,10 +1,12 @@
 from fastapi import FastAPI, Request
 import requests, base64
-
+from dotenv import load_dotenv
 app = FastAPI()
+import os
+load_dotenv()
 
-CLIENT_ID = "aU9NOUxOLTRSVzFMaWVkVm1QT2M6MTpjaQ"
-CLIENT_SECRET = "D1pZpXE-bNMdnMZ5N7O0_ABU1AujyZC5w5YnJvhJj5fBMBVXug"
+CLIENT_ID = os.getenv("CLIENT_ID")
+CLIENT_SECRET = os.getenv("CLIENT_SECRET")
 REDIRECT_URI = "http://localhost:8000/callback"
 
 @app.get("/login")
