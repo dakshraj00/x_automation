@@ -1,0 +1,12 @@
+langchain-core
+langgraph
+langchain-openai
+
+streamlit
+fastapi
+
+langchain-community
+
+python-dotenv
+pydantic
+requests
