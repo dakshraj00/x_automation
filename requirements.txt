@@ -2,11 +2,11 @@ langchain-core
 langgraph
 langchain-openai
 
-streamlit
+uvicorn
 fastapi
-
+requests
 langchain-community
-
+schedule
 python-dotenv
 pydantic
 requests
